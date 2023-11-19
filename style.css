@@ -1,0 +1,1278 @@
+/*  Tous les éléments */
+*{
+    margin: 0;/* la marge extérieure de tous les éléments */
+    padding: 0;/* le rembourrage intérieur de tous les éléments */
+    box-sizing: border-box;/* la largeur et la hauteur d'un élément incluent à la fois le contenu réel */
+    outline: none;/*supprime toute bordure extérieure*/
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+/*  Tous les éléments */
+/* top-navbar */
+  .top-navbar{
+    display: flex;/* affichage flex */
+    justify-content: space-between;/* aligner horizontalement les éléments à l'intérieur du conteneur flex */
+  }
+  .top-navbar p{
+    margin-top: 13px;
+    margin-left: 15px;
+  }
+  .top-navbar .icons{
+    margin-top: 13px;
+    margin-right: 15px;
+  }
+  .top-navbar a{
+    text-decoration: none;/* supprimer la décoration de texte par défaut(une ligne sous le texte)*/
+    color: black;
+    margin-left: 10px;
+  }
+  .top-navbar img{
+    margin-bottom: 3px;
+  }
+  .top-navbar a:hover{/* lorsqu'ils sont en état de survol, c'est-à-dire lorsque la souris passe au-dessus d'eux. */
+    color: black;
+  }
+@media screen and (max-width:320px){/* . Elle spécifie que les styles à l'intérieur de ce bloc de médias seront appliqués uniquement lorsque la largeur de l'écran est de 320  */
+    .top-navbar a{
+        font-size: 10px;
+    }
+    .top-navbar a img{
+        width: 13px;
+    }
+    .top-navbar p {
+        font-size: 10px;
+    }
+    
+}  
+@media screen and (max-width:318px){
+    .top-navbar a{
+        font-size: 8px;
+        margin-left: 0;
+    }
+    .top-navbar a img{
+        width: 10px;
+        margin-left: 0;
+    }
+    .top-navbar p {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    
+}  
+
+/* top-navbar */
+
+/* navbar */
+#navbar{
+  background-color: rgb(67,0,86);
+}
+#logo{
+  margin-left: 15px;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 6px;
+
+}
+#logo span{
+  color: #ffc800;
+}
+#logo #span1{
+  font-size: 30px;
+}
+.navbar-nav{
+  margin-left: 20px;
+}
+.nav-item{
+  margin-left: 10px;
+}
+.nav-item .nav-link{
+  color: white;
+  margin-left: 2px;
+  text-shadow: 0px 0px 1px black;
+  transform: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+  color: #ffc800;
+}
+.dropdown-menu li a {
+  color: white;
+  transform: 0.5s ease;
+}
+.dropdown-menu li a:hover{
+  background-color: rgb(67,0,86);
+  color: #ffc800;
+}
+#search input{
+  border-radius: 50px;
+  border: white;
+}
+#search button{
+  border-radius: 50px;
+  color: white;
+  border: 1px solid #ffc800;
+  background-color: #ffc800;
+}
+/* navbar */
+
+
+/* home content */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .img {
+  flex: 1 1 100%; /* Ajustez la largeur pour centrer l'image */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  animation: scale 20s infinite linear;
+}
+
+.home .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home .content {
+  flex: 1 1 100%; /* Ajustez la largeur pour centrer le contenu */
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Centrer le texte */
+}
+
+.home h1 {
+  color: #ffc800;
+  font-weight: bold;
+  font-size: 3em; /* Ajustez la taille de la police */
+  text-shadow: -1px 1px 1px black;
+}
+.home p {
+  color: #fff;
+
+}
+
+#span2 {
+  color: #ffc800;
+}
+
+
+
+
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .home {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content h1 {
+    font-size: 2.5em;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 0.8em;
+  }
+}
+/* home content */
+
+
+/* accessories cards */
+#accessories-cards{
+  margin-top: 100px;
+}
+
+#accessories-cards h1{
+  color: #ffc800;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid #ffc800;
+}
+/* accessories cards */
+
+/* card-laptop */
+#card-laptop {
+  margin: 50px 300px 50px 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(45deg, rgb(67,0,86), #fff); /* Add a gradient background */
+  padding: 20px; /* Add padding for better spacing */
+  opacity: 0;
+  transform: scale(0.5); /* Set initial scale to 0.5 for the scale-in effect */
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#card-laptop .card{
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+}
+#card-laptop .card img{
+  margin: 20px 60px 20px 60px;
+  height: 200px;
+  width: 300px
+  
+}
+#card-laptop .card h3{
+  font-size: 25px;
+  color: black;
+}
+#card-laptop .card p{
+
+  font-size: 12px;
+  margin: 30px;
+  color: black;
+}
+.star i{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.checked {
+  color: #ffc800;
+}
+#card-laptop .card h2{
+  font-size: 20px;
+  color: black;
+  margin: 50px;
+}
+#card-laptop .card h2 span{
+  float: right;
+  color: black;
+  cursor: pointer;
+ 
+}
+
+#card-laptop button {
+  background-color:#ffc800; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+
+
+#card-laptop button:hover {
+  background-color: rgb(67,0,86); 
+}
+@media screen and (max-width:1300px){
+  
+  
+    #card-laptop .card img{
+      margin: 20px 60px 20px 60px;
+      height: 150px;
+      width: 100px
+      
+    }
+    #card-laptop .card h3{
+      font-size: 20px;
+    }
+    #card-laptop .card p{
+    
+      font-size: 10px;
+      margin: 10px;
+    }
+    .star i{
+      margin-left: 5px;
+      font-size: 13px;
+    }
+    
+    #card-laptop .card h2{
+      font-size: 18px;
+      margin: 40px;
+    }
+    
+    
+    #card-laptop button {
+      
+      padding: 8px 18px; 
+      
+      
+  }
+}
+@media screen and (max-width:1000px){
+  
+  
+  #card-laptop .card img{
+    margin: 0;
+    height: 130px;
+    width: 80px
+    
+  }
+  #card-laptop .card h3{
+    font-size: 18px;
+  }
+  #card-laptop .card p{
+  
+    font-size: 8px;
+    margin: 8px;
+  }
+  .star i{
+    margin-left: 3px;
+    font-size: 10px;
+  }
+  
+  #card-laptop .card h2{
+    font-size: 16px;
+    margin: 30px;
+  }
+  
+  
+  #card-laptop button {
+    
+    padding: 6px 16px;  
+    
+    
+}
+}
+
+@media screen and (max-width:950px){
+  
+  
+  #card-laptop .card img{
+    margin: 0;
+    height: 50px;
+    width: 30px
+    
+  }
+  #card-laptop .card h3{
+    font-size: 5px;
+  }
+  #card-laptop .card p{
+  
+    font-size: 5px;
+    margin: 5px;
+  }
+  .star i{
+    margin-left: 2px;
+    font-size: 5px;
+  }
+  
+  #card-laptop .card h2{
+    font-size: 5px;
+    margin: 3px;
+  }
+  
+  
+  #card-laptop button {
+    
+    padding:1px ;  
+    
+    
+}
+}
+
+
+/* card-laptop */
+
+
+
+
+
+/* card-Desktop */
+#card-Desktop {
+  margin: 50px 300px 50px 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(45deg, rgb(67,0,86), #fff); /* Add a gradient background */
+  padding: 20px; /* Add padding for better spacing */
+  opacity: 0;
+  transform: scale(0.5); /* Set initial scale to 0.5 for the scale-in effect */
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#card-Desktop .card{
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+}
+#card-Desktop .card img{
+  margin: 20px 60px 20px 60px;
+  height: 200px;
+  width: 300px
+  
+}
+#card-Desktop .card h3{
+  font-size: 25px;
+  color: black;
+}
+#card-Desktop .card p{
+
+  font-size: 12px;
+  margin: 30px;
+  color: black;
+}
+.star i{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.checked {
+  color: #ffc800;
+}
+#card-Desktop .card h2{
+  font-size: 20px;
+  color: black;
+  margin: 50px;
+}
+#card-Desktop .card h2 span{
+  float: right;
+  color: black;
+  cursor: pointer;
+ 
+}
+
+#card-Desktop button {
+  background-color:#ffc800; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+
+
+#card-Desktop button:hover {
+  background-color: rgb(67,0,86); 
+}
+
+@media screen and (max-width:1300px){
+  
+  
+  #card-Desktop .card img{
+    margin: 20px 60px 20px 60px;
+    height: 150px;
+    width: 100px
+    
+  }
+  #card-Desktop .card h3{
+    font-size: 20px;
+  }
+  #card-Desktop .card p{
+  
+    font-size: 10px;
+    margin: 10px;
+  }
+  .star i{
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
+  #card-Desktop .card h2{
+    font-size: 18px;
+    margin: 40px;
+  }
+  
+  
+  #card-Desktop button {
+    
+    padding: 8px 18px; 
+    
+    
+}
+}
+@media screen and (max-width:1000px){
+
+
+#card-Desktop .card img{
+  margin: 0;
+  height: 130px;
+  width: 80px
+  
+}
+#card-Desktop .card h3{
+  font-size: 18px;
+}
+#card-Desktop .card p{
+
+  font-size: 8px;
+  margin: 8px;
+}
+.star i{
+  margin-left: 3px;
+  font-size: 10px;
+}
+
+#card-Desktop .card h2{
+  font-size: 16px;
+  margin: 30px;
+}
+
+
+#card-Desktop button {
+  
+  padding: 6px 16px;  
+  
+  
+}
+}
+
+@media screen and (max-width:950px){
+
+
+#card-Desktop .card img{
+  margin: 0;
+  height: 50px;
+  width: 30px
+  
+}
+#card-Desktop .card h3{
+  font-size: 5px;
+}
+#card-Desktop .card p{
+
+  font-size: 5px;
+  margin: 5px;
+}
+.star i{
+  margin-left: 2px;
+  font-size: 5px;
+}
+
+#card-Desktop .card h2{
+  font-size: 5px;
+  margin: 3px;
+}
+
+
+#card-Desktop button {
+  
+  padding:1px ;  
+  
+  
+}
+}
+/* card-Desktop */
+
+
+/*  IT-component */
+
+#IT-component {
+  margin: 50px 300px 50px 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(45deg, rgb(67,0,86), #fff); /* Add a gradient background */
+  padding: 20px; /* Add padding for better spacing */
+  opacity: 0;
+  transform: scale(0.5); /* Set initial scale to 0.5 for the scale-in effect */
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#IT-component .card{
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+}
+#IT-component .card img{
+  margin: 20px 60px 20px 60px;
+  height: 200px;
+  width: 250px
+  
+}
+#IT-component .card h3{
+  font-size: 25px;
+  color: black;
+}
+#IT-component .card p{
+
+  font-size: 12px;
+  margin: 30px;
+  color: black;
+}
+.star i{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.checked {
+  color: #ffc800;
+}
+#IT-component .card h2{
+  font-size: 20px;
+  color: black;
+  margin: 50px;
+}
+#IT-component .card h2 span{
+  float: right;
+  color: black;
+  cursor: pointer;
+ 
+}
+
+#IT-component button {
+  background-color:#ffc800; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+
+
+#IT-component button:hover {
+  background-color: rgb(67,0,86); 
+}
+
+@media screen and (max-width:1300px){
+  
+  
+  #IT-component .card img{
+    margin: 20px 60px 20px 60px;
+    height: 150px;
+    width: 100px
+    
+  }
+  #IT-component .card h3{
+    font-size: 20px;
+  }
+  #IT-component .card p{
+  
+    font-size: 10px;
+    margin: 10px;
+  }
+  .star i{
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
+  #IT-component .card h2{
+    font-size: 18px;
+    margin: 40px;
+  }
+  
+  
+  #IT-component button {
+    
+    padding: 8px 18px; 
+    
+    
+}
+}
+@media screen and (max-width:1000px){
+
+
+#IT-component .card img{
+  margin: 0;
+  height: 130px;
+  width: 80px
+  
+}
+#IT-component .card h3{
+  font-size: 18px;
+}
+#IT-component .card p{
+
+  font-size: 8px;
+  margin: 8px;
+}
+.star i{
+  margin-left: 3px;
+  font-size: 10px;
+}
+
+#IT-component .card h2{
+  font-size: 16px;
+  margin: 30px;
+}
+
+
+#IT-component button {
+  
+  padding: 6px 16px;  
+  
+  
+}
+}
+
+@media screen and (max-width:950px){
+
+
+#IT-component .card img{
+  margin: 0;
+  height: 50px;
+  width: 30px
+  
+}
+#IT-component .card h3{
+  font-size: 5px;
+}
+#IT-component .card p{
+
+  font-size: 5px;
+  margin: 5px;
+}
+.star i{
+  margin-left: 2px;
+  font-size: 5px;
+}
+
+#IT-component .card h2{
+  font-size: 5px;
+  margin: 3px;
+}
+
+
+#IT-component button {
+  
+  padding:1px ;  
+  
+  
+}
+}
+/*  IT component */
+
+/* card-server */
+
+#card-server {
+  margin: 50px 300px 50px 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(45deg, rgb(67,0,86), #fff); /* Add a gradient background */
+  padding: 20px; /* Add padding for better spacing */
+  opacity: 0;
+  transform: scale(0.5); /* Set initial scale to 0.5 for the scale-in effect */
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#card-server .card{
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+}
+#card-server .card img{
+  margin: 20px 60px 20px 60px;
+  height: 200px;
+  width: 250px
+  
+}
+#card-server .card h3{
+  font-size: 25px;
+  color: black;
+}
+#card-server .card p{
+
+  font-size: 12px;
+  margin: 30px;
+  color: black;
+}
+.star i{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.checked {
+  color: #ffc800;
+}
+#card-server .card h2{
+  font-size: 20px;
+  color: black;
+  margin: 50px;
+}
+#card-server .card h2 span{
+  float: right;
+  color: black;
+  cursor: pointer;
+ 
+}
+
+#card-server button {
+  background-color:#ffc800; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+
+
+#card-server button:hover {
+  background-color: rgb(67,0,86); 
+}
+
+
+@media screen and (max-width:1300px){
+  
+  
+  #card-server .card img{
+    margin: 20px 60px 20px 60px;
+    height: 150px;
+    width: 100px
+    
+  }
+  #card-server .card h3{
+    font-size: 20px;
+  }
+  #card-server .card p{
+  
+    font-size: 10px;
+    margin: 10px;
+  }
+  .star i{
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
+  #card-server .card h2{
+    font-size: 18px;
+    margin: 40px;
+  }
+  
+  
+  #card-server button {
+    
+    padding: 8px 18px; 
+    
+    
+}
+}
+@media screen and (max-width:1000px){
+
+
+#card-server .card img{
+  margin: 0;
+  height: 130px;
+  width: 80px
+  
+}
+#card-server .card h3{
+  font-size: 18px;
+}
+#card-server .card p{
+
+  font-size: 8px;
+  margin: 8px;
+}
+.star i{
+  margin-left: 3px;
+  font-size: 10px;
+}
+
+#card-server .card h2{
+  font-size: 16px;
+  margin: 30px;
+}
+
+
+#card-server button {
+  
+  padding: 6px 16px;  
+  
+  
+}
+}
+
+@media screen and (max-width:950px){
+
+
+#card-server .card img{
+  margin: 0;
+  height: 50px;
+  width: 30px
+  
+}
+#card-server .card h3{
+  font-size: 5px;
+}
+#card-server .card p{
+
+  font-size: 5px;
+  margin: 5px;
+}
+.star i{
+  margin-left: 2px;
+  font-size: 5px;
+}
+
+#card-server .card h2{
+  font-size: 5px;
+  margin: 3px;
+}
+
+
+#card-server button {
+  
+  padding:1px ;  
+  
+  
+}
+}
+/*  card-server */
+
+
+/* Peripheral and Accessorie */
+#card-peripheral {
+  margin: 50px 300px 50px 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background: linear-gradient(45deg, rgb(67,0,86), #fff); /* Add a gradient background */
+  padding: 20px; /* Add padding for better spacing */
+  opacity: 0;
+  transform: scale(0.5); /* Set initial scale to 0.5 for the scale-in effect */
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#card-peripheral .card{
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+}
+#card-peripheral .card img{
+  margin: 20px 60px 20px 60px;
+  height: 200px;
+  width: 250px
+  
+}
+#card-peripheral .card h3{
+  font-size: 25px;
+  color: black;
+}
+#card-peripheral .card p{
+
+  font-size: 12px;
+  margin: 30px;
+  color: black;
+}
+.star i{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.checked {
+  color: #ffc800;
+}
+#card-peripheral .card h2{
+  font-size: 20px;
+  color: black;
+  margin: 50px;
+}
+#card-peripheral .card h2 span{
+  float: right;
+  color: black;
+  cursor: pointer;
+ 
+}
+@media screen and (max-width:1000px){
+  #card-peripheral .card h3{
+    font-size: 18px;
+  }
+}
+#card-peripheral button {
+  background-color:#ffc800; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+}
+
+
+#card-peripheral button:hover {
+  background-color: rgb(67,0,86); 
+}
+
+
+@media screen and (max-width:1300px){
+  
+  
+  #card-peripheral .card img{
+    margin: 20px 60px 20px 60px;
+    height: 150px;
+    width: 100px
+    
+  }
+  #card-peripheral .card h3{
+    font-size: 20px;
+  }
+  #card-peripheral .card p{
+  
+    font-size: 10px;
+    margin: 10px;
+  }
+  .star i{
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
+  #card-peripheral .card h2{
+    font-size: 18px;
+    margin: 40px;
+  }
+  
+  
+  #card-peripheral button {
+    
+    padding: 8px 18px; 
+    
+    
+}
+}
+@media screen and (max-width:1000px){
+
+
+#card-peripheral .card img{
+  margin: 0;
+  height: 130px;
+  width: 80px
+  
+}
+#card-peripheral .card h3{
+  font-size: 18px;
+}
+#card-peripheral .card p{
+
+  font-size: 8px;
+  margin: 8px;
+}
+.star i{
+  margin-left: 3px;
+  font-size: 10px;
+}
+
+#card-peripheral .card h2{
+  font-size: 16px;
+  margin: 30px;
+}
+
+
+#card-peripheral button {
+  
+  padding: 6px 16px;  
+  
+  
+}
+}
+
+@media screen and (max-width:950px){
+
+
+#card-peripheral .card img{
+  margin: 0;
+  height: 50px;
+  width: 30px
+  
+}
+#card-peripheral .card h3{
+  font-size: 5px;
+}
+#card-peripheral .card p{
+
+  font-size: 5px;
+  margin: 5px;
+}
+.star i{
+  margin-left: 2px;
+  font-size: 5px;
+}
+
+#card-peripheral .card h2{
+  font-size: 5px;
+  margin: 3px;
+}
+
+
+#card-peripheral button {
+  
+  padding:1px ;  
+  
+  
+}
+}
+/* Peripheral and Accessorie */
+
+
+
+
+
+
+/* footer */
+#footer{
+  padding: 0 0 30px 0px;
+  color: white;
+  font-size: 14px;
+  background-color: rgb(67,0,86);
+  margin-top: 100px;
+}
+#footer .footer-top{
+  padding: 60px 0 30px 0;
+  background-color: rgb(67,0,86);
+  color: white;
+}
+#footer .footer-top .footer-contact{
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+  color:#ffc800;
+}
+#footer .footer-top .footer-contact h4{
+ color: #ffc800;
+}
+#footer .footer-top .footer-contact p{
+  font-size: 16px;
+  margin-bottom: 0;
+  color: white;
+  line-height: 1.5;
+  
+}
+#footer .footer-top h4{
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  
+}
+#footer .footer-top .footer-link{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-link h4{
+ color: #ffc800;
+}
+#footer .footer-top .footer-link ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-link ul li{
+ padding: 10px 0;
+ display: flex;
+ align-items: center;
+}
+#footer .footer-top .footer-link ul a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  font-weight: bold;
+ }
+ #footer .footer-top .footer-link ul a:hover{
+  color: #ffc800;
+ }
+ #footer .footer-top .social-links a{
+  font-size: 10px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #373737;
+  color: white;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  transform: 0.5s ease;
+ }
+ #footer .footer-top .social-links a:hover{
+  background-color: #ffc800;
+  color: white;
+ }
+ #footer .copyright{
+  text-align: center;
+  float: left;
+ }
+ #footer .credits{
+  float: right;
+  text-align: center;
+  font-size: 13px;
+ }
+ #footer .credits a{
+  color: #ffc800;
+ }
+/* footer */
